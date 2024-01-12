@@ -1,0 +1,58 @@
+@forward '../../utils/base/index';
+@use '../../index.scss' as var;
+
+.section-projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+
+  article {
+    box-shadow: var.$box-shadow;
+    height: 14rem;
+    cursor: pointer;
+    transition: var.$transition;
+    &:hover {
+      box-shadow: 0 7px 18px rgba(241, 233, 233, 0.153);
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding: 0.3rem;
+    }
+
+    a {
+      color: var.$clr-white;
+      transition: var.$transition;
+      &:hover {
+        text-decoration: underline 1px var.$clr-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  article {
+    overflow-y: auto;
+    a {
+      overflow: auto;
+    }
+  }
+}

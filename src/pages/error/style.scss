@@ -1,0 +1,21 @@
+@forward '../../index.scss';
+@use '../../index.scss' as var;
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .error-link {
+    color: var.$clr-white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    letter-spacing: var.$letter-spaceing;
+    border: 1px solid var.$clr-white;
+    padding: 0.5rem 0.3rem;
+    transition: var.$transition;
+    &:hover {
+      box-shadow: var.$box-shadow;
+    }
+  }
+}
