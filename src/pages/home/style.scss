@@ -42,10 +42,14 @@ section {
   }
 }
 
-@media screen and (max-width: 250px) {
-  .home {
-    h1 {
-      font-size: 1rem;
-    }
+@media screen and (max-width: 500px) {
+  section .home div h1 {
+    font-size: 1.5rem;
+  }
+  section .home div p {
+    font-size: 1rem;
+  }
+  .home-info {
+    margin-left: 0.1rem;
   }
 }

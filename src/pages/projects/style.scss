@@ -8,7 +8,7 @@
 
   article {
     box-shadow: var.$box-shadow;
-    height: 14rem;
+    height: 13rem;
     cursor: pointer;
     transition: var.$transition;
     &:hover {
@@ -40,6 +40,9 @@
   .section-projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .section-projects article a {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -54,5 +57,9 @@
     a {
       overflow: auto;
     }
+  }
+
+  .section-projects article a {
+    font-size: 0.8rem;
   }
 }

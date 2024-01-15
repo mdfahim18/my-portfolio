@@ -17,20 +17,24 @@ const Navbar = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate-hover');
-    }, 4000);
+    }, 3000);
     return () => clearTimeout(timeout);
   }, []);
   return (
     <header>
       <nav>
         <h1 onClick={() => navigate('/')}>
-          <AnimationLetters letterClass={letterClass} strArray={nameArray} />
+          <AnimationLetters
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={10}
+          />
         </h1>
         <ul className='lists'>
           {navData.map((item, index) => {
             const { page, link } = item;
             return (
-              <li o key={index} onClick={() => setValue(index)}>
+              <li key={index} onClick={() => setValue(index)}>
                 <Link
                   to={link}
                   className={`${

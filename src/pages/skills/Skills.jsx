@@ -8,6 +8,7 @@ const Skills = () => {
   return (
     <section onClick={() => setIsSidebarOpen(false)}>
       <TagCloud
+        className='skills-section'
         options={(w) => ({
           radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
           maxSpeed: 'normal',
@@ -29,6 +30,7 @@ const Skills = () => {
           'Redux',
           'Route',
           'API',
+          'ES6/ES7',
         ]}
       </TagCloud>
     </section>
