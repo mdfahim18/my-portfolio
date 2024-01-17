@@ -23,13 +23,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <h1 onClick={() => navigate('/')}>
-          <AnimationLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={10}
-          />
-        </h1>
+        <h1 onClick={() => navigate('/')}>fahim</h1>
         <ul className='lists'>
           {navData.map((item, index) => {
             const { page, link } = item;
