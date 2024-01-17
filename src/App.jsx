@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import './App.scss';
@@ -8,21 +8,44 @@ import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import Error from './pages/error/Error';
+import { BallTriangle } from 'react-loader-spinner';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <main className='main'>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='skills' element={<Skills />} />
-          <Route path='projects' element={<Projects />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='*' element={<Error />} />
-        </Routes>
-      </BrowserRouter>
+      {isLoading ? (
+        <div className='loader'>
+          <BallTriangle
+            height={100}
+            width={100}
+            radius={5}
+            color='#09090b'
+            ariaLabel='ball-triangle-loading'
+            wrapperStyle={{}}
+            wrapperClass=''
+            visible={true}
+          />
+        </div>
+      ) : (
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='skills' element={<Skills />} />
+            <Route path='projects' element={<Projects />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='*' element={<Error />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </main>
   );
 }

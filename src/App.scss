@@ -5,3 +5,10 @@ main {
   box-shadow: 0 5px 15px rgba(226, 216, 216, 0.1);
   position: relative;
 }
+.loader {
+  font-size: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
