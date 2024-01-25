@@ -59,7 +59,7 @@ export const projectsData = [
     icon: <FaReact />,
     desc: 'This is React note app project. This website is make by React and CSS. You can toggle dark mood and light mood.',
     img: p1,
-    link: 'https://my-react-grocery-bud-project.netlify.app',
+    link: 'https://my-react-note-app-1.netlify.app',
   },
   {
     id: 3,
