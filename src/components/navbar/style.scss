@@ -27,15 +27,15 @@ header {
         color: var.$clr-white;
         letter-spacing: 0.5px;
         cursor: pointer;
+        font-size: 1.1rem;
         position: relative;
-        padding: 5px 3px;
+        padding: 4px 0;
         border-radius: 0.1rem;
         &::before {
           content: '';
           position: absolute;
           bottom: -4px;
           height: 2px;
-          margin-left: -3px;
           width: 0;
           background: var.$clr-white;
           transition: var.$transition;

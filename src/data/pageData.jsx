@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaReact, FaSass } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiTypescript } from 'react-icons/si';
+import { SiTypescript, SiRedux } from 'react-icons/si';
 import { FaMessage } from 'react-icons/fa6';
 import { FaWhatsapp, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
@@ -16,6 +16,7 @@ import p8 from '../assets/projectsImages/project8.png';
 import p9 from '../assets/projectsImages/project9.png';
 import p10 from '../assets/projectsImages/project10.png';
 import p11 from '../assets/projectsImages/project11.png';
+import p12 from '../assets/projectsImages/project12.png';
 
 export const aboutData = [
   {
@@ -58,7 +59,7 @@ export const projectsData = [
     category: 'React',
     icon: <FaReact />,
     desc: 'This is React note app project. This website is make by React and CSS. You can toggle dark mood and light mood.',
-    img: p1,
+    img: p2,
     link: 'https://my-react-note-app-1.netlify.app',
   },
   {
@@ -66,7 +67,7 @@ export const projectsData = [
     category: 'React',
     icon: <FaReact />,
     desc: 'This is React grocery bud project. This website is make by React and CSS',
-    img: p2,
+    img: p3,
     link: 'https://my-react-grocery-bud-project.netlify.app',
   },
   {
@@ -132,6 +133,14 @@ export const projectsData = [
     desc: 'This is React Submenu project. This website is make by React and CSS',
     img: p11,
     link: 'https://my-react-submenu.netlify.app',
+  },
+  {
+    id: 12,
+    category: 'Redux',
+    icon: <SiRedux />,
+    desc: 'This is Redux-tookit books management project. This website is make by React redux and Redux toolkit',
+    img: p12,
+    link: 'https://redux-toolkit-books-mgt-app.netlify.app/',
   },
 ];
 

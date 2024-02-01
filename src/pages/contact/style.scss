@@ -79,6 +79,19 @@
       }
     }
   }
+
+  .password-field {
+    position: relative;
+
+    span {
+      position: absolute;
+      right: 1%;
+      bottom: 0;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: var.$clr-nav;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {

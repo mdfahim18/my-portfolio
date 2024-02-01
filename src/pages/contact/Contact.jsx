@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import { contactData } from '../../data/pageData';
 import { useGlobalContext } from '../../utils/context/useContext';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Contact = () => {
   const { setIsSidebarOpen } = useGlobalContext();
+
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -42,9 +46,17 @@ const Contact = () => {
               <label htmlFor='email'>Email:</label>
               <input type='email' id='email' name='email' required />
             </div>
-            <div>
+            <div className='password-field'>
               <label htmlFor='password'>Password:</label>
-              <input type='password' id='password' name='password' required />
+              <input
+                type={showPassword ? 'text' : 'password'}
+                id='password'
+                name='password'
+                required
+              />
+              <span onClick={() => setShowPassword(!showPassword)}>
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
             </div>
             <div>
               <label htmlFor='message'>Message:</label>
