@@ -9,6 +9,7 @@ import Contact from './pages/contact/Contact';
 import Navbar from './components/navbar/Navbar';
 import Error from './pages/error/Error';
 import { BallTriangle } from 'react-loader-spinner';
+import SingleProject from './pages/projects/singleProject/SingleProject';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,9 +39,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='skills' element={<Skills />} />
-            <Route path='projects' element={<Projects />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/single-project/:id' element={<SingleProject />} />
             <Route path='contact' element={<Contact />} />
             <Route path='*' element={<Error />} />
           </Routes>

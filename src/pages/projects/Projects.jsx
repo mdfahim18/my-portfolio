@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Category from '../../components/category/Category';
 import { useGlobalContext } from '../../utils/context/useContext';
 import './style.scss';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const { projectsCategory, projects, fillterProjects, setIsSidebarOpen } =
@@ -26,10 +27,13 @@ const Projects = () => {
                 <img src={img} alt={category} />
                 <footer>
                   <i>{icon}</i>
-                  <p>{readMore ? desc : `${desc.substring(0, 20)}...`}</p>
-                  <a href={link} target='_black'>
-                    {link}
-                  </a>
+                  <Link
+                    className='details-link'
+                    to={`/single-project/${id}`}
+                    state={{ img, desc, category, link }}
+                  >
+                    details
+                  </Link>
                 </footer>
               </article>
             );

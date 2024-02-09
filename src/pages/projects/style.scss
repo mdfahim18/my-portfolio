@@ -8,30 +8,37 @@
 
   article {
     box-shadow: var.$box-shadow;
-    height: 13rem;
+    height: 10rem;
+    display: flex;
     cursor: pointer;
     transition: var.$transition;
-    overflow-y: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.1rem;
     &:hover {
       box-shadow: 0 7px 18px rgba(241, 233, 233, 0.153);
     }
     img {
       width: 100%;
       height: auto;
+      overflow-y: hidden;
     }
 
     footer {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       gap: 0.3rem;
       padding: 0.3rem;
     }
 
-    a {
+    .details-link {
+      text-transform: capitalize;
+      font-size: 1rem;
       color: var.$clr-white;
+      cursor: pointer;
       transition: var.$transition;
       &:hover {
-        text-decoration: underline 1px var.$clr-white;
+        text-decoration: underline 1px solid var.$clr-hover;
       }
     }
   }

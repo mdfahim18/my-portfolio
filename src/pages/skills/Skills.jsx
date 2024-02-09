@@ -20,17 +20,19 @@ const Skills = () => {
           'HIML',
           'CSS',
           'JavaScript',
-          'React',
+          'React.js',
           'TypeScript',
           'SASS',
           'Responsive',
           'HIML5',
           'CSS3',
           'Animation',
-          'Redux',
+          'Redux toolkit',
           'Route',
           'API',
           'ES6/ES7',
+          'NEXT.js',
+          'Tailwind CSS',
         ]}
       </TagCloud>
     </section>
