@@ -9,7 +9,7 @@ const SingleProject = () => {
       <img src={location.state.img} alt={location.state.category} />
       <p>{location.state.desc}</p>
       <footer>
-        <p>Category: {location.state.category}</p>
+        <p>Technology used: {location.state.technology}</p>
         <p>
           Link:{' '}
           <a target='_blank' href={location.state.link}>

@@ -53,6 +53,7 @@ export const projectsData = [
     desc: 'This is CSS restaurant website project. This website is make by HTML and CSS',
     img: p3,
     link: 'https://css-restaurant-project.netlify.app',
+    technology: 'HTML, CSS',
   },
   {
     id: 2,
@@ -61,6 +62,7 @@ export const projectsData = [
     desc: 'This is React note app project. This website is make by React and CSS. You can toggle dark mood and light mood.',
     img: p2,
     link: 'https://my-react-note-app-1.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 3,
@@ -69,6 +71,7 @@ export const projectsData = [
     desc: 'This is React grocery bud project. This website is make by React and CSS',
     img: p3,
     link: 'https://my-react-grocery-bud-project.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 4,
@@ -77,6 +80,7 @@ export const projectsData = [
     desc: 'This is CSS E-commerce project. This website is make by HTML and CSS',
     img: p4,
     link: 'https://fahim-express.netlify.app',
+    technology: 'HTML.js, CSS',
   },
   {
     id: 5,
@@ -85,6 +89,7 @@ export const projectsData = [
     desc: 'This is React Country project. This website is make by React and CSS',
     img: p5,
     link: 'https://my-react-country-app.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 6,
@@ -93,6 +98,7 @@ export const projectsData = [
     desc: 'This is React Unsplash Image project. This website is make by React and CSS',
     img: p6,
     link: 'https://my-react-unsplash-image-project.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 7,
@@ -101,6 +107,7 @@ export const projectsData = [
     desc: 'This is React Menu project. This website is make by React and CSS',
     img: p7,
     link: 'https://my-react-menu-project.netlify.app',
+    technology: 'React, CSS',
   },
   {
     id: 8,
@@ -109,6 +116,7 @@ export const projectsData = [
     desc: 'This is React Navbar project. This website is make by React and CSS',
     img: p8,
     link: 'https://my-react-navbar-project.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 9,
@@ -117,6 +125,7 @@ export const projectsData = [
     desc: 'This is React Cocktail project. This website is make by React and CSS',
     img: p9,
     link: 'https://my-react-cocktail-project.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 10,
@@ -125,6 +134,7 @@ export const projectsData = [
     desc: 'This is React Cart project. This website is make by React and CSS',
     img: p10,
     link: 'https://my-react-cart-project1.netlify.app',
+    technology: 'React, CSS',
   },
   {
     id: 11,
@@ -133,6 +143,7 @@ export const projectsData = [
     desc: 'This is React Submenu project. This website is make by React and CSS',
     img: p11,
     link: 'https://my-react-submenu.netlify.app',
+    technology: 'React.js, CSS',
   },
   {
     id: 12,
@@ -141,6 +152,7 @@ export const projectsData = [
     desc: 'This is Redux-tookit books management project. This website is make by React redux and Redux toolkit',
     img: p12,
     link: 'https://redux-toolkit-books-mgt-app.netlify.app/',
+    technology: 'React.js, Redux toolkiy, CSS',
   },
 ];
 

@@ -21,7 +21,7 @@ const Projects = () => {
 
         <div className='section-projects section-info'>
           {projects.map((items) => {
-            const { id, desc, icon, img, category, link } = items;
+            const { id, desc, icon, img, category, link, technology } = items;
             return (
               <article key={id}>
                 <img src={img} alt={category} />
@@ -30,7 +30,7 @@ const Projects = () => {
                   <Link
                     className='details-link'
                     to={`/single-project/${id}`}
-                    state={{ img, desc, category, link }}
+                    state={{ img, desc, technology, link, category }}
                   >
                     details
                   </Link>
