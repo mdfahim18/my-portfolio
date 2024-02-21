@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './style.scss';
+import '../style.scss';
 
 const SingleProject = () => {
   const location = useLocation();

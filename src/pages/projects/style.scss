@@ -37,13 +37,36 @@
       color: var.$clr-white;
       cursor: pointer;
       transition: var.$transition;
+      border: 1px solid var.$clr-white;
+      padding: 0.3rem;
+      &:hover {
+        box-shadow: var.$box-shadow;
+      }
+    }
+  }
+}
+
+// single project
+
+.single-project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 1.1rem;
+
+    a {
+      color: var.$clr-white;
+      transition: var.$transition;
       &:hover {
         text-decoration: underline 1px solid var.$clr-hover;
       }
     }
   }
 }
-
 @media screen and (max-width: 800px) {
   .section-projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
-import './App.scss';
 import About from './pages/about/About';
 import Skills from './pages/skills/Skills';
 import Projects from './pages/projects/Projects';
