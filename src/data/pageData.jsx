@@ -4,6 +4,7 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { SiTypescript, SiRedux } from 'react-icons/si';
 import { FaMessage } from 'react-icons/fa6';
 import { FaWhatsapp, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { SiNextdotjs } from 'react-icons/si';
 
 import p1 from '../assets/projectsImages/project1.png';
 import p2 from '../assets/projectsImages/project2.png';
@@ -17,6 +18,8 @@ import p9 from '../assets/projectsImages/project9.png';
 import p10 from '../assets/projectsImages/project10.png';
 import p11 from '../assets/projectsImages/project11.png';
 import p12 from '../assets/projectsImages/project12.png';
+import p13 from '../assets/projectsImages/project13.png';
+import p14 from '../assets/projectsImages/project14.png';
 
 export const aboutData = [
   {
@@ -152,7 +155,29 @@ export const projectsData = [
     desc: 'This is Redux-tookit books management project. This website is make by React redux and Redux toolkit',
     img: p12,
     link: 'https://redux-toolkit-books-mgt-app.netlify.app/',
-    technology: 'React.js, Redux toolkiy, CSS',
+    technology: 'React.js, Redux toolkit, CSS',
+  },
+  {
+    id: 13,
+    category: 'Next js',
+    icon: <SiNextdotjs />,
+    desc: 'This is Next js 14 anime vault app. Features: Browse Anime: Users can easily browse through a variety of anime series displayed on the homepage Load More: As users scroll down, more anime series are loaded dynamically, providing endless entertainment options. Detailed Information: Each anime card provides detailed information about the series, including its name, genre, number of episodes, and score. Eye-catching Design: The application features a visually appealing design with high-quality images and smooth animations. Responsive: Anime Vault is designed to work seamlessly across devices of all sizes, ensuring a consistent experience for users on desktops, tablets, and mobile devices.',
+    img: p13,
+    link: 'https://nextjs-anime-vault.netlify.app/',
+    technology: 'Next js, React js, Tailwind CSS',
+  },
+  {
+    id: 14,
+    category: 'Next js',
+    icon: <SiNextdotjs />,
+    desc: `Displays current weather conditions for the user's location
+    Supports searching for weather information in other locations
+    Converts temperature from Kelvin to Celsius
+    Converts wind speed from meters per second to kilometers per hour
+    Determines whether it is day or night in the specified location`,
+    img: p14,
+    link: 'There is a environment variables problem on Netlify',
+    technology: 'Next js, React js, Tailwind CSS',
   },
 ];
 
