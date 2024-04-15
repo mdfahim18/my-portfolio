@@ -20,6 +20,7 @@ import p11 from '../assets/projectsImages/project11.png';
 import p12 from '../assets/projectsImages/project12.png';
 import p13 from '../assets/projectsImages/project13.png';
 import p14 from '../assets/projectsImages/project14.png';
+import p15 from '../assets/projectsImages/project15.png';
 
 export const aboutData = [
   {
@@ -177,6 +178,21 @@ export const projectsData = [
     Determines whether it is day or night in the specified location`,
     img: p14,
     link: 'There is a environment variables problem on Netlify',
+    technology: 'Next js, React js, Tailwind CSS',
+  },
+  {
+    id: 15,
+    category: 'Next js',
+    icon: <SiNextdotjs />,
+    desc: `🚗 Car Catalogue: Explore a wide range of cars available in the catalogue.
+
+  🔍 Search: Easily search for specific car models using the search bar.
+  
+  🎛️ Custom Filters: Filter cars by fuel type, year of production, and more using custom filter options.
+  
+  🔄 Pagination: Navigate through multiple pages of car listings with the pagination feature.`,
+    img: p15,
+    link: 'https://nextjs-car-showcase1.netlify.app',
     technology: 'Next js, React js, Tailwind CSS',
   },
 ];

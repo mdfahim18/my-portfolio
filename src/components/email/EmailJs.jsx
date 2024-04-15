@@ -12,7 +12,7 @@ const EmailJs = () => {
     const serviceId = 'service_092cusx';
     const templateId = 'template_v9g3cni';
     const publicKey = 'rjA7TpZ76hAVwLAOQ';
-    console.log(templateId);
+
     const data = {
       service_id: serviceId,
       template_id: templateId,
@@ -34,8 +34,10 @@ const EmailJs = () => {
       setName('');
       setEmail('');
       setMessage('');
+      alert('Thank you for contact me.');
     } catch (error) {
       console.log(error);
+      alert('Somethis went wrong. Please try again.');
     }
   };
 
