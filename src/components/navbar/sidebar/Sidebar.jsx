@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../style.scss';
-import { useGlobalContext } from '../../../utils/context/useContext';
+import { useGlobalContext } from '../../../utils/useContext';
 import { navData } from '../../../data/navData';
 import { Link } from 'react-router-dom';
 

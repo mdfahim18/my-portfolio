@@ -1,5 +1,5 @@
 import { useContext, useState, createContext } from 'react';
-import { aboutData, projectsData } from '../../data/pageData';
+import { aboutData, projectsData } from '../data/pageData';
 const AppContext = createContext();
 
 const allfillteredItems = [

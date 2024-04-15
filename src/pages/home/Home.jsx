@@ -3,7 +3,7 @@ import profile from '../../assets/images/profile.jpg';
 import './style.scss';
 import { FaGithub } from 'react-icons/fa';
 import AnimationLetters from '../../components/animation/AnimationLetters';
-import { useGlobalContext } from '../../utils/context/useContext';
+import { useGlobalContext } from '../../utils/useContext';
 const Home = () => {
   const { setIsSidebarOpen } = useGlobalContext();
   const [letterClass, setLetterClass] = useState('text-animate');

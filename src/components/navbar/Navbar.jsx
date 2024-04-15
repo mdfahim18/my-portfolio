@@ -3,9 +3,8 @@ import './style.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { navData } from '../../data/navData';
 import { FaBars } from 'react-icons/fa6';
-import { useGlobalContext } from '../../utils/context/useContext';
+import { useGlobalContext } from '../../utils/useContext';
 import Sidebar from './sidebar/Sidebar';
-import AnimationLetters from '../animation/AnimationLetters';
 
 const Navbar = () => {
   const { isSidebarOpen, setIsSidebarOpen } = useGlobalContext();
@@ -13,7 +12,6 @@ const Navbar = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const navigate = useNavigate();
 
-  const nameArray = ['f', 'a', 'h', 'i', 'm'];
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLetterClass('text-animate-hover');

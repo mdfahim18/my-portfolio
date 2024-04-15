@@ -1,6 +1,6 @@
 import React from 'react';
-import Category from '../../components/category/Category';
-import { useGlobalContext } from '../../utils/context/useContext';
+import Category from '../../components/Category';
+import { useGlobalContext } from '../../utils/useContext';
 
 const About = () => {
   const { fillterItems, about, categories, setIsSidebarOpen } =

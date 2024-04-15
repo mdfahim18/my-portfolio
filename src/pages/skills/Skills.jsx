@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import { TagCloud } from '@frank-mayer/react-tag-cloud';
-import { useGlobalContext } from '../../utils/context/useContext';
+import { useGlobalContext } from '../../utils/useContext';
 
 const Skills = () => {
   const { setIsSidebarOpen } = useGlobalContext();

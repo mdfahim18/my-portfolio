@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import { useGlobalContext } from '../../utils/context/useContext';
+import { useGlobalContext } from '../../utils/useContext';
 import { Link } from 'react-router-dom';
 const Error = () => {
   const { setIsSidebarOpen } = useGlobalContext();

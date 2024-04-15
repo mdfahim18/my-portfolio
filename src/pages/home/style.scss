@@ -1,5 +1,5 @@
 @use '../../index.scss' as var;
-@forward '../../utils/base/index';
+@forward '../../utils/index';
 section {
   .home {
     display: flex;

@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import Category from '../../components/category/Category';
-import { useGlobalContext } from '../../utils/context/useContext';
+import React from 'react';
+import Category from '../../components/Category';
+import { useGlobalContext } from '../../utils/useContext';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const { projectsCategory, projects, fillterProjects, setIsSidebarOpen } =
     useGlobalContext();
-  const [readMore, setReadMore] = useState(false);
 
   return (
     <section onClick={() => setIsSidebarOpen(false)}>
