@@ -177,7 +177,7 @@ export const projectsData = [
     Converts wind speed from meters per second to kilometers per hour
     Determines whether it is day or night in the specified location`,
     img: p14,
-    link: 'There is a environment variables problem on Netlify',
+    link: 'https://nextjs-weather-app-indol.vercel.app/',
     technology: 'Next js, React js, Tailwind CSS',
   },
   {
