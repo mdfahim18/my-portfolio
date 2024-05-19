@@ -21,6 +21,7 @@ import p12 from '../assets/projectsImages/project12.png';
 import p13 from '../assets/projectsImages/project13.png';
 import p14 from '../assets/projectsImages/project14.png';
 import p15 from '../assets/projectsImages/project15.png';
+import p16 from '../assets/projectsImages/project16.png';
 
 export const aboutData = [
   {
@@ -194,6 +195,18 @@ export const projectsData = [
     img: p15,
     link: 'https://nextjs-car-showcase1.netlify.app',
     technology: 'Next js, React js, Tailwind CSS',
+  },
+  {
+    id: 16,
+    category: 'Next js',
+    icon: <SiNextdotjs />,
+    desc: `Browse products by category: Electronics, Jewelry, Men's Clothing, Women's Clothing. View product details including price, rating, and description.
+    Add products to the cart.
+    Increment, decrement, and remove items from the cart.Filter products by price range and customer ratings.
+    Sort products by customer reviews, price low to high, and price high to low.`,
+    img: p16,
+    link: 'https://nextjs-shopping-cart-five.vercel.app/',
+    technology: 'Next js, React js, Redux toolkit, Tailwind CSS',
   },
 ];
 
