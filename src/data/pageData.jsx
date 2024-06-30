@@ -22,6 +22,7 @@ import p13 from '../assets/projectsImages/project13.png';
 import p14 from '../assets/projectsImages/project14.png';
 import p15 from '../assets/projectsImages/project15.png';
 import p16 from '../assets/projectsImages/project16.png';
+import p17 from '../assets/projectsImages/project17.png';
 
 export const aboutData = [
   {
@@ -207,6 +208,15 @@ export const projectsData = [
     img: p16,
     link: 'https://nextjs-shopping-cart-five.vercel.app/',
     technology: 'Next js, React js, Redux toolkit, Tailwind CSS',
+  },
+  {
+    id: 17,
+    category: 'Next js',
+    icon: <SiNextdotjs />,
+    desc: `Shadecn UI Dashboard is a responsive and modern dashboard interface designed for web applications. This project utilizes a variety of technologies to deliver a clean and user-friendly experience for managing data and insights.`,
+    img: p17,
+    link: 'shadecn-dashboard-mu.vercel.app/',
+    technology: 'Next js, React js, Tailwind CSS',
   },
 ];
 
